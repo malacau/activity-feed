@@ -1,0 +1,51 @@
+.notification {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.avatar {
+    width: 56px;
+    border-radius: 50%;
+    transition: transform .4s ease-in-out;
+}
+
+.avatar:hover {
+    transform: rotate(680deg);
+}
+
+.notification-content {
+    flex-grow: 1;
+    padding: 0 24px;
+}
+
+.notification p {
+    margin: 0;
+}
+
+.notification-content-date {
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.notification .notification-action {
+    opacity: 0;
+    display: flex;
+    transition: ease .3s;
+}
+
+.notification:hover .notification-action {
+    opacity: 1;
+}
+
+.notification .notification-action a {
+    color: #999999;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+.notification .notification-action a:hover {
+    color: #555555;
+}
